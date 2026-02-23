@@ -7,11 +7,11 @@ $dicionario = @{
 }
 
 switch ($dicionario.tipo){
-    {$_ -in "compra"} {
+    {$tipo -in "compra"} {
         write-host "Compra de $($dicionario.valor)€"
     }
 
-    {$_ -in "venda"} {
+    {$valor -in "venda"} {
         write-host "Compra de $($dicionario.valor)€"
     }
 

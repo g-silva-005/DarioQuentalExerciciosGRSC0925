@@ -2,12 +2,12 @@
 $x = Read-Host "Introduza um valor"
 
 switch ($x) {
-    { $_.Contains(",") } {
+    { $x.Contains(",") } {
         Write-Host "Lista"
         break
     }
 
-    { $_.Contains(".") } {
+    { $x.Contains(".") } {
         Write-Host "Número decimal"
         break
     }

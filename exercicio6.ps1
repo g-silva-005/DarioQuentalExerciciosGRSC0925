@@ -7,15 +7,15 @@ $dicionario = @{
 }
 
 switch ($dicionario.status){
-    {$_ -in "ok" -and $dicionario.tempo_resposta -le 200} {
+    {$dicionario.status -in "ok" -and $dicionario.tempo_resposta -le 200} {
         write-host "Servidor ativo"
     }
 
-    {$_ -in "ok" -and  $dicionario.tempo_resposta -gt 200} {
+    {$dicinario.status -in "ok" -and  $dicionario.tempo_resposta -gt 200} {
         write-host "Servidor lento"
     }
 
-    {$_ -in "erro"} {
+    {$dicionario.status -in "erro"} {
         write-host "Servidor indisponivel"
     }
 

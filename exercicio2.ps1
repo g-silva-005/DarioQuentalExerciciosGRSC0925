@@ -1,19 +1,19 @@
 ﻿$nota = read-Host "Introduza a classificacao: "
 
 switch ($nota) {
-    {$_ -in "excelente"} {
+    {$nota -in "excelente"} {
         Write-Host "90 ou mais"
     }
 
-    {$_ -in "bom"} {
+    {$nota -in "bom"} {
         Write-Host "70-89"
     }
 
-    {$_ -in "suficiente"} {
+    {$nota -in "suficiente"} {
         Write-Host "50-69"
     }
 
-    {$_ -in "insuficiente"} {
+    {$nota -in "insuficiente"} {
         Write-Host "abaixo de 50"
     }
 
