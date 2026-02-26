@@ -49,4 +49,8 @@ switch ($mes) {
     {$mes -eq 12} {
         Write-Host "Dezembro"
     }
+
+    default {
+        Write-Host "Mes invalido"
+    }
 }
