@@ -12,7 +12,7 @@ switch ($x) {
         break
     }
 
-    { $null -ne ($_ -as [int]) } {
+    { $null -ne ($x -as [int]) } {
         Write-Host "Número inteiro"
         break
     }
